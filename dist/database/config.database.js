@@ -14,8 +14,9 @@ const sequelize_1 = require("sequelize");
 const nameBd = `${process.env.NAMEBD}`;
 const userBd = `${process.env.USERBD}`;
 const passwordBd = `${process.env.PASSBD}`;
+const host = `${process.env.HOST}`;
 const sequelize = new sequelize_1.Sequelize(nameBd, userBd, passwordBd, {
-    host: "localhost",
+    host: host,
     dialect: "mysql",
 });
 exports.sequelize = sequelize;

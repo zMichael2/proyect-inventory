@@ -6,7 +6,7 @@ import { connectDatabase } from "./database/config.database";
 import inventoryRouter from "./routers/inventory.router";
 
 const app: Express = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 connectDatabase();
 app.use(cors());
